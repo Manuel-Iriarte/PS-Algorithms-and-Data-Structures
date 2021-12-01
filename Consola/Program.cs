@@ -1,4 +1,5 @@
-﻿using System;
+﻿using A.StoringAndAccessingData;
+using System;
 
 namespace Consola
 {
@@ -6,7 +7,9 @@ namespace Consola
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var ejemplo = new Arreglos1();
+
+            ejemplo.Ejecutar();
         }
     }
 }
