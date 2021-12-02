@@ -7,7 +7,7 @@ namespace Consola
     {
         static void Main(string[] args)
         {
-            var ejemplo = new Arreglos1();
+            var ejemplo = new Arreglos2();
 
             ejemplo.Ejecutar();
         }
