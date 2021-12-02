@@ -7,9 +7,19 @@ namespace Consola
     {
         static void Main(string[] args)
         {
+            #region Arrays
+            
             var ejemplo = new Arreglos2();
 
             ejemplo.Ejecutar();
+
+            #endregion
+
+            #region Linked Lists
+
+
+
+            #endregion
         }
     }
 }
