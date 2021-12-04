@@ -24,24 +24,24 @@ namespace B.LinkedLists
         {
             // ejemplo de nodos y su creacion con la clase nodo
 
-            var nodo = new Node(34);
+            var nodo = new LinkedListNode(34);
 
-            nodo.ProximoNodo = new Node(66);
+            nodo.ProximoNodo = new LinkedListNode(66);
 
-            nodo.ProximoNodo.ProximoNodo = new Node(88);
+            nodo.ProximoNodo.ProximoNodo = new LinkedListNode(88);
 
             // singly linked list
             // clase generica que contiene el valoir y la referencia al proximo nodo
 
-            var lista = new LinkedListNode<Node>(nodo, null);
+            var lista = new LinkedList<LinkedListNode>(nodo, null);
 
             // doubly linked list
             // es como el single pero se puede mover en reversa, teniendo una referencia al nodo anterior
             // la clase nodo (NodoD) contiene una referencia tambien al nodo anterior
 
-            var nodo1 = new NodeD(3);
-            var nodo2 = new NodeD(6);
-            var nodo3 = new NodeD(9);
+            var nodo1 = new DoubleLinkedListNode(3);
+            var nodo2 = new DoubleLinkedListNode(6);
+            var nodo3 = new DoubleLinkedListNode(9);
 
             nodo1.Proximo = nodo2;
             nodo2.Anterior = nodo1;

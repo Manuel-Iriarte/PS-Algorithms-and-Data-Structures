@@ -1,14 +1,16 @@
-﻿namespace Core
+﻿using System;
+
+namespace Core
 {
-    public class LinkedListNode<TNode>
+    public class LinkedListNode
     {
-        public LinkedListNode(TNode valor, LinkedListNode<TNode> proximo = null)
+        public LinkedListNode(int valor)
         {
             Valor = valor;
-            Proximo = proximo;
+            ProximoNodo = null;
         }
 
-        public LinkedListNode<TNode> Proximo { get; set; }
-        public TNode Valor { get; set; }
+        public LinkedListNode ProximoNodo { get; set; }
+        public int Valor { get; set; }
     }
 }
