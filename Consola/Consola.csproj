@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\A.StoringAndAccessingData\A.StoringAndAccessingData.csproj" />
+    <ProjectReference Include="..\B.LinkedLists\B.LinkedLists.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 
 </Project>

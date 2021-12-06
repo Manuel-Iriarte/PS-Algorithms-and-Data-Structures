@@ -1,4 +1,6 @@
 ﻿using A.StoringAndAccessingData;
+using B.LinkedLists;
+using Core;
 using System;
 
 namespace Consola
@@ -17,14 +19,9 @@ namespace Consola
 
             #region Linked Lists
 
+            var dLinkedLlist = new LinkedLists1();
 
-            #endregion
-
-            #region Programa Principal
-
-            Manager gestor = new Manager();
-
-            gestor.Ejecutar();
+            dLinkedLlist.Ejecutar();
 
             #endregion
         }

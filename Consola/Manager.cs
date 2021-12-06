@@ -6,17 +6,17 @@ namespace Consola
     {
         public void Ejecutar()
         {
-            bool salir = false;
-            var timer = new Stopwatch();
-            timer.Start();
+            //bool salir = false;
+            //var timer = new Stopwatch();
+            //timer.Start();
 
-            while (!salir)
-            {
+            //while (!salir)
+            //{
 
-            }
+            //}
 
-            timer.Stop();
-            Log.Verbose("{0} completed after: {1} ms", cmd.Verb, timer.Elapsed.TotalMilliseconds);
+            //timer.Stop();
+            //Log.Verbose("{0} completed after: {1} ms", cmd.Verb, timer.Elapsed.TotalMilliseconds);
         }
     }
 }

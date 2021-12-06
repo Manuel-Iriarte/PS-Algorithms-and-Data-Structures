@@ -24,30 +24,50 @@ namespace B.LinkedLists
         {
             // ejemplo de nodos y su creacion con la clase nodo
 
-            var nodo = new LinkedListNode(34);
+            var lista = new ListaEnlazadaDoble<int>();
 
-            nodo.ProximoNodo = new LinkedListNode(66);
-
-            nodo.ProximoNodo.ProximoNodo = new LinkedListNode(88);
-
-            // singly linked list
-            // clase generica que contiene el valoir y la referencia al proximo nodo
-
-            var lista = new LinkedList<LinkedListNode>(nodo, null);
 
             // doubly linked list
             // es como el single pero se puede mover en reversa, teniendo una referencia al nodo anterior
             // la clase nodo (NodoD) contiene una referencia tambien al nodo anterior
 
-            var nodo1 = new DoubleLinkedListNode(3);
-            var nodo2 = new DoubleLinkedListNode(6);
-            var nodo3 = new DoubleLinkedListNode(9);
+            lista.Add(1);
+            lista.Add(3); 
+            lista.Add(5);
+            lista.Add(7);
 
-            nodo1.Proximo = nodo2;
-            nodo2.Anterior = nodo1;
-            nodo2.Proximo = nodo3;
-            nodo3.Anterior = nodo2;
+            Console.WriteLine("Listar");
 
+            foreach (int numero in lista)
+            {
+                Console.WriteLine(numero);
+            }
+
+            Console.WriteLine("Listar Inverso");
+
+            foreach (int numero in lista.GetReverseEnumerator())
+            {
+                Console.WriteLine(numero);
+            }
+
+            Console.WriteLine("Contiene valor buscado?");
+
+            Console.WriteLine(lista.Contains(5));
+
+            Console.WriteLine(lista.Contains(6));
+
+            Console.WriteLine("Encuentra valor buscado?");
+
+            Console.WriteLine(lista.Find(3).NodoAnterior.Valor);
+
+            Console.WriteLine("Remueve un valor:");
+
+            lista.Remove(3);
+
+            foreach (int numero in lista)
+            {
+                Console.WriteLine(numero);
+            }
         }
     }
 }
